@@ -35,7 +35,7 @@ def getcsv(argv):
 						sys.stderr.write("--Error-- {} does not contain key: {}.\n".format(argv[i], l_key))
 						flag = False
 			else:
-				print("File {} does not exist.".format(argv[i]))
+				sys.stderr.write("File {} does not exist.".format(argv[i]))
 		if flag:
 			print('Process finished without errors.')
 			return out_string
